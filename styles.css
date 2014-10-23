@@ -1,0 +1,63 @@
+#affiche_product {
+
+
+	position:absolute ;
+	border-color: black;
+	border-width: 2px;
+
+	float: left;
+
+	top: 400px;
+	left: 150px;
+ 	
+ 	/*border:solid 1px black*/
+
+}
+
+#affiche_product:hover {
+
+	/*-webkit-transform:rotate(60deg) scale(1.5,1.5);*/
+
+
+
+}
+
+
+body {
+
+	
+}
+
+#zoom_product {
+
+	position:absolute ;
+	float: left;
+
+	top: 400px;
+	left: 300px;
+
+	background-color: gray;
+
+
+}
+
+h1{
+
+	font-size: 28px;
+	color: green ;
+
+}
+
+#screen-result{
+
+
+	background-color: green ;
+	color: yellow ;
+
+}
+
+#pic_product:hover {
+
+
+
+}

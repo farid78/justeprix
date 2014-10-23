@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link href="normalize.css"  rel="stylesheet" media="all" type="text/css">
+	<link href="styles.css" rel="stylesheet" media="all" type="text/css">
+
+	<!-- <link rel="stylesheet" href="flexslider.css" type="text/css"> -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	<script src="js/justeprix.js"></script>
+	<script src="js/utility.js"></script>
+
+	<!-- <script src="js/jquery-1.11.1.js"></script> -->
+	<!-- <script src="js/jquery.flexslider.js"></script>-->
+
+	<!-- <link rel="stylesheet" href="flexslider.css" type="text/css"> -->
+	
+	<title>Le juste prix</title>
+
+	<script type="text/javascript">
+	
+                        <!--
+                        var temps = 0;
+                        var compteur;
+                        
+                        function lancerCompteur(tempsInitial)
+                                {
+                                temps = tempsInitial
+                                actualiserCompteur();
+                                compteur = setInterval("actualiserCompteur()",1000);
+                                }
+
+                        function actualiserCompteur()
+                                {
+                                if (temps <= 0)
+                                        {
+                                        clearInterval(compteur);
+                                        }
+                                var jours = 0;
+                                var heures = 0;
+                                var minutes = 0;
+                                var secondes = 0;
+                                jours = parseInt(temps / 86400);
+                                heures = parseInt((temps % 86400) / 3600);
+                                minutes = parseInt((temps % 3600) / 60);
+                                secondes = temps % 60;
+                                var div = document.getElementById("temps");
+                                var texte = document.createTextNode(jours + " jour(s) " + heures + " heure(s) " + minutes + " minute(s) " +  secondes + " secondes(s)");
+                               
+                                if (div.firstChild != null)
+                                        {
+                                        div.removeChild(div.firstChild);
+                                        }
+                                div.appendChild(texte);
+                                temps --;
+                                }
+                        -->
+    </script>
+
+	
+
+</head>
+
+
+
+<body>
+
+<header>
+			
+</header>
+
+	<script>
+			
+
+			document.addEventListener("DOMContentLoaded",function()
+				{
+					RandomProduct();
+					installEventHandlers("#saisie_price","submit",TestPrice) ;
+					
+
+				});
+
+			
+		
+	</script>
+
+
+
+	<img src="images/le-juste-prix.jpg" width = "350" height ="350">
+
+	<section>
+		
+		<div class="clearfix">
+
+			<div id="affiche_product">
+
+
+				<!-- prevoir affichage aleatoire d'un produit -->
+	
+				<img src="images/product-1.jpg" width = "250" height ="300"  id="pic_product">
+
+				<span id="description"></span>
+
+				<p>à votre avis combien coute ce produit</p>
+
+				<form id="saisie_price">
+					
+					<p><input type="text" name="price" placeholder ="votre prix"  id="submit-price">  
+						<span id="screen-result"></span>
+					</p>
+				
+				</form>
+
+			</div>
+
+				
+				<div id="zoom_product">
+
+				<!-- <img src="images/product-1.jpg" width = "80%" > -->
+
+				</div>
+
+				
+		</div>	
+
+		<div id="temps"></div>
+
+	</section>
+
+
+		
+
+
+
+
+
+<footer>
+
+</footer>	
+
+</body>
